@@ -7,7 +7,7 @@ interface IWeatherStore {
   forecast: IForecast[] | null;
   setCurrentWeather: (weather: ICurrentWeather) => void;
   setForecast: (forecast: IForecast[]) => void;
-  setCity: (city: ICity) => void;
+  setCity: (city: ICity | null) => void;
 }
 
 export const useWeatherStore = create<IWeatherStore>((set) => ({
