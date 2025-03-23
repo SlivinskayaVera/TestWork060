@@ -1,0 +1,48 @@
+.selectorWithDropdown {
+  &__wrapper {
+    position: relative;
+    top: 5px;
+
+    width: 100%;
+    padding: 10px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+
+    overflow: visible;
+    z-index: 2;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 330px;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      display: none;
+    }
+  }
+
+  &__item {
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+      color: orange;
+    }
+
+    &__country {
+      color: var(--brandColor);
+      margin-bottom: 16px;
+    }
+  }
+}
