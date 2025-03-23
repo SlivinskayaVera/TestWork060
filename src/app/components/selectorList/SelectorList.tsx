@@ -5,9 +5,13 @@ import { ICity } from '@/app/commonTypes/types';
 interface SelectorListProps {
   data: ICity[];
   onClick: (city: ICity) => Promise<void>;
+  isOpen: boolean;
 }
 
-export const SelectorList = ({ data, onClick }: SelectorListProps) => {
+export const SelectorList = ({ isOpen, data, onClick }: SelectorListProps) => {
+
+  if (!isOpen) return null;
+  
   return (
     <div className={style.selectorWithDropdown__wrapper}>
       <div className={style.selectorWithDropdown__body}>
