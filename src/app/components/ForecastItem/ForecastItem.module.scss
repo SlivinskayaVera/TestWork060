@@ -1,0 +1,27 @@
+.forecastItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  gap: 30px;
+  width: 100%;
+
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 0 #00000021;
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__description {
+    text-align: left;
+  }
+}
