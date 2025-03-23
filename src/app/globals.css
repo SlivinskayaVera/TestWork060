@@ -1,6 +1,6 @@
 :root {
   --background: #459094;
-  --foreground: #ededed;
+  --mainTextColor: #ededed;
   --brandColor: #ffa500;
 }
 
@@ -37,7 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: var(--foreground);
+  color: var(--mainTextColor);
   background: var(--background);
 }
 
@@ -53,5 +53,5 @@ main {
 }
 
 a {
-  color: var(--foreground);
+  color: var(--mainTextColor);
 }
