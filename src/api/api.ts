@@ -14,7 +14,18 @@ export const convertCityNameToCityObject = async (cityName: string) => {
     throw 'Nothing was found for your query';
   }
 
-  return response.data;
+  const results = response.data.map((result: ICity, index: number) => {
+    return {
+      id: index + 1,
+      country: result.country,
+      lat: result.lat,
+      lon: result.lon,
+      name: result.name,
+      state: result.state,
+    };
+  });
+
+  return results;
 };
 
 export const fetchCurrentWeather = async (city: ICity) => {
