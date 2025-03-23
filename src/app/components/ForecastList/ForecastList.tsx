@@ -1,8 +1,7 @@
-import React from 'react';
 import { useWeatherStore } from '@/store/useWeatherStore';
-import ForecastItem from '../ForecastItem/ForecastItem';
-import { Stack } from 'react-bootstrap';
 import Link from 'next/link';
+import { Stack } from 'react-bootstrap';
+import ForecastItem from '../ForecastItem/ForecastItem';
 
 const ForecastList = () => {
   const { forecast } = useWeatherStore();
