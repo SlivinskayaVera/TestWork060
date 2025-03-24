@@ -35,7 +35,7 @@ const ForecastPage = () => {
   }, [setForecast, city]);
 
   return (
-    <Stack gap={3} className='col-lr-5 mx-auto'>
+    <Stack gap={3} className='col-lg-7 mx-auto'>
       <h1>Weather forecast for 5 days {city ? `in ${city?.name}` : ''}</h1>
 
       <ForecastList />

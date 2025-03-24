@@ -25,7 +25,7 @@ const FavoritesPage = () => {
   }, [favorites]);
 
   return (
-    <Stack gap={3} className='col-lr-5 mx-auto'>
+    <Stack gap={3} className='col-lg-7 mx-auto'>
       <h1>Favorites Cities</h1>
 
       {favorites.length > 0 ? (
