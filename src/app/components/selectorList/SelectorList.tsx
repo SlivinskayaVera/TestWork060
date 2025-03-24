@@ -8,7 +8,7 @@ interface SelectorListProps {
   isOpen: boolean;
 }
 
-export const SelectorList = ({ isOpen, data, onClick }: SelectorListProps) => {
+const SelectorList = ({ isOpen, data, onClick }: SelectorListProps) => {
 
   if (!isOpen) return null;
   
@@ -27,3 +27,5 @@ export const SelectorList = ({ isOpen, data, onClick }: SelectorListProps) => {
     </div>
   );
 };
+
+export default SelectorList;
