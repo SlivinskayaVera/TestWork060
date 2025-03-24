@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useWeatherStore } from '@/store/useWeatherStore';
 import { ICity } from '@/app/commonTypes/types';
 import LoadingPage from '../LoadingPage/LoadingPage';
-import { SelectorList } from '../SelectorList/SelectorList';
+import SelectorList from '../SelectorList/SelectorList';
 import SearchBar from '../SearchBar/SearchBar';
 
 const SearchWithDropDown = () => {
