@@ -11,7 +11,7 @@ const HomePage = () => {
   const { currentWeather, city } = useWeatherStore();
 
   return (
-    <Stack gap={3} className='col-lr-5 mx-auto'>
+    <Stack gap={3} className='col-lg-7 mx-auto'>
       <h1>Weather</h1>
 
       <SearchWithDropDown />
